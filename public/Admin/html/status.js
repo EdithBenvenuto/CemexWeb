@@ -37,19 +37,17 @@ const dropdown2 = document.getElementById("projects");
 dropdown2.addEventListener("change",getSelectValue2);
 function getSelectValue2(){
 selectedValueP = dropdown2.value;
-var temp4='<div class="row"><div id="result" class="col">Asignados con subtareas en Proyecto: '+ selectedValueP + '</div></div><div id="titulos"><div class="row"><div class="col-12">Nombre</div></div></div></div>';
-temp4 += "<div id='tablaResultado'>";
+var temp4='<div class="row"><div id="result1" class="col">Asignados con subtareas en Proyecto: '+ selectedValueP + '</div></div><div id="titulos1"><div class="row"><div class="col-12">Nombre</div></div></div></div>';
+temp4 += "<div id='tablaResultado1'>";
 (datos4.respuesta4).forEach((i)=>{
     if(i.project_name == selectedValueP){
         temp4 += "<div class='row'>";
-        temp4 += "<div class='col-1'></div>";
-        temp4 += "<div class='col-2'>" + i.subtask_assignee + "</div>";
-        temp4 += "<div class='col-1'></div></div>";
+        temp4 += "<div class='col asignadosProject'>" + i.subtask_assignee + "</div></div>";
     }
 })
 temp4 += "</div>";
 document.getElementById("project_names").innerHTML = temp4;
-temp4='<div class="row"><div id="result" class="col">Asignados con subtareas en Proyecto: '+ selectedValueP + '</div></div><div id="titulos"><div class="row"><div class="col-12">Nombre</div></div></div></div>'
+temp4='<div class="row"><div id="result1" class="col">Asignados con subtareas en Proyecto: '+ selectedValueP + '</div></div><div id="titulos1"><div class="row"><div class="col-12">Nombre</div></div></div></div>'
 }
 
 //USUARIOS PARA DESPLIEGUE DE TAREAS
@@ -58,21 +56,19 @@ const dropdown = document.getElementById("users");
 dropdown.addEventListener("change",getSelectValue);
 function getSelectValue(){
 selectedValue = dropdown.value;
-var temp2='<div class="row"><div id="result" class="col">Subtarea de '+ selectedValue + '</div></div><div id="titulos"><div class="row"><div class="col-1"></div><div class="col-6">Summary</div><div class="col-2">Status</div><div class="col-2">Priority</div><div class="col-1"></div></div></div>';
-temp2 += "<div id='tablaResultado'>";
+var temp2='<div class="row"><div id="result2" class="col">Subtarea de '+ selectedValue + '</div></div><div id="titulos2"><div class="row"><div id="summary" class="col-8">Summary</div><div class="col-2">Status</div><div class="col-2">Priority</div></div></div>';
+temp2 += "<div id='tablaResultado2'>";
 (datos2.respuesta2).forEach((i)=>{
     if(i.subtask_assignee == selectedValue){
         temp2 += "<div class='row'>";
-        temp2 += "<div class='col-1'></div>";
-        temp2 += "<div class='col-6 estatusT summaryT'>" + i.subtask_summary + "</div>" ;
+        temp2 += "<div class='col-8 estatusT summaryT'>" + i.subtask_summary + "</div>" ;
         temp2 += "<div class='col-2 estatusT'>" + i.subtask_status + "</div>";
-        temp2 += "<div class='col-2 estatusT'>" + i.subtask_priority + "</div>";
-        temp2 += "<div class='col-1'></div></div>";
+        temp2 += "<div class='col-2 estatusT'>" + i.subtask_priority + "</div></div>";
     }
 })
 temp2 += "</div>";
 document.getElementById("subtareas").innerHTML = temp2;
-temp2='<div class="row"><div id="result" class="col">Subtarea de '+ selectedValue + '</div></div><div id="titulos"><div class="row"><div class="col-1"></div><div class="col-6">Summary</div><div class="col-2">Status</div><div class="col-2">Priority</div><div class="col-1"></div></div></div>';
+temp2='<div class="row"><div id="result2" class="col">Subtarea de '+ selectedValue + '</div></div><div id="titulos2"><div class="row"><div class="col-1"></div><div class="col-6">Summary</div><div class="col-2">Status</div><div class="col-2">Priority</div><div class="col-1"></div></div></div>';
 
 }
 

@@ -228,17 +228,33 @@ a {
   background-color: #f0efef;
 }
  */
-#tablaResultado .row{
+#tablaResultado1 .row{
   padding: 1% 0;
+  background-color: #ffffff;
+  border-bottom: solid 1px #9436a2;
+}
+
+#tablaResultado2 .row{
+  padding: 1%;
   background-color: #ffffff;
   border-bottom: solid 1px #38a3a5;
 }
 
-#tablaResultado .row:last-child{
+#tablaResultado1, #tablaResultado2 .row:last-child{
   border-radius: 0 0 10px 10px;
 }
 
-#titulos .row{
+#titulos1 .row{
+  font-weight: bolder;
+  background-color: #ffffff;
+  color: #9436a2;
+  font-size:150%;
+  padding: 1%;
+  border-bottom: solid 1px #9436a2;
+  text-align: center;
+}
+
+#titulos2 .row{
   font-weight: bolder;
   background-color: #ffffff;
   color: #38a3a5;
@@ -249,15 +265,32 @@ a {
 
 #subtareas{
   padding-top: 4%;
+  padding-left: 1%;
+}
+
+#tabla_projects{
+  padding-top: 8%;
+  padding-right: 1%;
 }
 
 .summaryT{
   color:#000000;
   font-weight:bold;
   font-size: medium;
+  padding-right: 1%;
 }
 
-#result{
+#result1{
+  background-color: #9a3aa9;
+  color: #ffffff;
+  text-align: center;
+  padding: 2% 0;
+  border-radius: 10px 10px 0 0;
+  font-size:150%;
+  font-weight: bolder;
+}
+
+#result2{
   background-color: #38a3a5;
   color: #ffffff;
   text-align: center;
@@ -266,3 +299,12 @@ a {
   font-size:200%;
   font-weight: bolder;
 }
+
+.asignadosProject{
+  font-weight: bold;
+}
+
+#summary{
+  padding-left: 2%;
+}
+
