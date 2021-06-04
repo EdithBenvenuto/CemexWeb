@@ -241,6 +241,38 @@ app.get("/status2/", (req, res) => {
   });
 });
 
+app.get("/status3/", (req, res) => {
+  const conn = sql.connect(config, (err) => {
+    if (err) console.log(err);
+    const request = new sql.Request();
+    let query ="SELECT project_name from project"
+    console.log(query);
+    request.query(query, (err, { recordset }) => {
+      if (err) console.log(err);
+      console.log(recordset);
+      res.json({
+        respuesta3: recordset
+      });
+    });
+  });
+});
+
+app.get("/status4/", (req, res) => {
+  const conn = sql.connect(config, (err) => {
+    if (err) console.log(err);
+    const request = new sql.Request();
+    let query ="SELECT project.project_name, subtask.subtask_assignee from subtask join task on task.task_key = subtask.task_key join project on project.project_key = task.project_key GROUP by subtask.subtask_assignee, project.project_name;"
+    console.log(query);
+    request.query(query, (err, { recordset }) => {
+      if (err) console.log(err);
+      console.log(recordset);
+      res.json({
+        respuesta4: recordset
+      });
+    });
+  });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
