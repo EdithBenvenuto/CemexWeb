@@ -94,6 +94,7 @@ a {
     padding-left: 100px;
     margin-left: 30px;
     background-color: #f0efef;
+    min-height: 100vh;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
