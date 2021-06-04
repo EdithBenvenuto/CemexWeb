@@ -1,0 +1,73 @@
+/*aqui empieza el diseno de la pagina como tal*/
+.aux
+{
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#tituloAcerca{
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#main
+{
+
+  display:grid;
+  justify-content: center;
+  margin-bottom: 10px;;
+}
+
+#imagenAcerca
+{
+    margin-top: 30px;
+    width:200px;
+    height:250px;
+}
+.qs h3
+{
+    margin-left:10px;
+}
+
+.qs
+{
+    padding-left: 15vh;
+}
+
+.apartadoQuien
+{
+    padding-left:15vh;
+}
+
+
+.example 
+{
+  margin: 8% auto;
+  justify-content: center;
+}
+
+.example_two
+{
+  justify-content: center;
+  margin-bottom: 8%;
+}
+
+.column-one {
+  float: left;
+  width: 40%;
+  font-size:20px;
+}
+.column-two {
+  float: left;
+  width: 40%;
+}
+
+.column-two img{
+  width: 500px;
+  padding: 5px;
+  height: 250px;
+}
+
+.example_two p{ 
+font-size: 18px;
+}

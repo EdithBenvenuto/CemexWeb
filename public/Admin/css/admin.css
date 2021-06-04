@@ -1,0 +1,267 @@
+a {
+    color: white;
+}
+.navbar{
+    background:#062F81;
+    height: 55px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-brand>img{
+        height:40px;
+        margin-left:50px;
+}
+.navbar-brand{
+    margin-left:5px;
+}
+
+
+.nav-link {
+    margin: 20px;
+}
+.nav-item {
+    font-size: 12px;
+}
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 50px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 100;
+    left: 0;
+    background-color: #062F81; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    margin-top: 50px;
+  }
+  /* The sidebar links */
+  .sidebar a {
+    padding: 9px 10px 15px 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .sidebar-text{
+    display: none;
+    font-size: 12px;
+  }
+  .sidebar-task{
+    font-size: 10px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #47ACEF;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #062F81;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 100px;
+    padding-left: 100px;
+    margin-left: 30px;
+    background-color: #f0efef;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  
+.btn-primary{
+  background-color: #062F81;
+  color: white;
+}
+
+.btn-primary:hover{
+  background-color: #D31A3D;
+  color: white;
+}
+
+
+.c3{margin-left:76px;}
+
+.c3 table {
+  border-collapse:separate;
+  border-spacing: 0px 20px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.c3 tr.headerTable
+{
+  color:black;
+  font-size: 1.5rem;
+  box-shadow: none;
+
+}
+
+.c3 td, th {
+  color:black;
+  padding: 10px 10px;
+  text-align: center;
+
+}
+
+.c3 tr{
+  box-shadow: 0px 0px 5px 0px rgb(114,114,114);
+}
+
+.c3 img 
+{
+  width: 50px;
+  height: 50px;
+}
+
+.c3 .Perfil 
+{
+  width:85px;
+  height:85px;
+  border-radius:150px;
+}
+
+
+.col-sm {
+  padding-bottom: 40px; 
+  margin: 1%;
+  background-color: white;
+}
+
+/* #tituloLeader, #tituloDashboard{
+  font-size: 8rem;
+	    text-align: center;
+      height:20vh;
+      line-height: 20vh;
+	    color: #36a2eb;
+     	font-family: 'arial', cursive;
+	    font-weight: 700;
+      text-shadow: 5px 5px 0px #062F81, 
+                  10px 10px 0px #ff6384, 
+                  15px 15px 0px #ffce56;
+} */
+
+#tituloLeader{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0;
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #d31a3d;
+  border-left: 10px solid #79071c;
+  border-right: 10px solid #79071c;
+  height: 15%;
+  margin-bottom:3%;
+  text-transform:uppercase;
+}
+
+#tituloDashboard{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0;
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1443db;
+  border-left: 10px solid #19178d;
+  border-right: 10px solid  #19178d;
+  height: 15%;
+  margin-bottom:3%;
+  text-transform:uppercase;
+}
+
+#tituloEstatus{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0;
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #7346c5;
+  border-left: 10px solid #4a2e77;
+  border-right: 10px solid #4a2e77;
+  height: 15%;
+  margin-bottom:3%;
+  text-transform:uppercase;
+}
+
+/* #tablaResultado .row:nth-child(even){
+  padding: 1% 0;
+  background-color: #f0efef;
+}
+ */
+#tablaResultado .row{
+  padding: 1% 0;
+  background-color: #ffffff;
+  border-bottom: solid 1px #38a3a5;
+}
+
+#tablaResultado .row:last-child{
+  border-radius: 0 0 10px 10px;
+}
+
+#titulos .row{
+  font-weight: bolder;
+  background-color: #ffffff;
+  color: #38a3a5;
+  font-size:150%;
+  padding: 1% 0;
+  border-bottom: solid 1px rgb(56, 163, 165);
+}
+
+#subtareas{
+  padding-top: 4%;
+}
+
+.summaryT{
+  color:#000000;
+  font-weight:bold;
+  font-size: medium;
+}
+
+#result{
+  background-color: #38a3a5;
+  color: #ffffff;
+  text-align: center;
+  padding: 2% 0;
+  border-radius: 10px 10px 0 0;
+  font-size:200%;
+  font-weight: bolder;
+}

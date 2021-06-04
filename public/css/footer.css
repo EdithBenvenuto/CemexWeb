@@ -1,0 +1,69 @@
+.footer-dark {
+  color:#fff;
+  background-color:#282d32;
+  position:sticky;
+  top: 100%;
+  z-index:4;
+  width: 100%;
+}
+
+.footer-dark h3{
+  margin-top:20px;
+  margin-bottom:8px;
+  font-weight:normal;
+  font-size:16px;
+}
+
+.left-text{
+  background-color:white;
+}
+
+.footer-dark ul {/*texto de adentro de Mas informacion*/
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:10px;
+  margin-bottom:0;
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+.footer-brand>img
+{
+  height:25px;
+  margin-left:50px;
+  margin-bottom: 10px;
+}
+
+#textoRS{
+  margin-right: 16px;
+}  
+
+.socialIcons{
+  text-align: right;
+  font-size: 30px;
+  padding:0px;
+}
+
+.footer-dark .copyright {
+  font-size:12px;
+  text-align:left;
+  margin-bottom: 2px;
+  color:white;
+  opacity: 0.3;
+}
+
+.footer-dark .opcionesFooter {
+  font-size:12px;
+  text-align:right;
+  margin-bottom: 2px;
+  color:white;
+  opacity: 0.3;
+}
+
+.redes {
+  color:white;
+  margin:10px
+}

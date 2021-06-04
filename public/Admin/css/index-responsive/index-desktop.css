@@ -1,0 +1,18 @@
+.main-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-main__item-1 {
+    width: 100%;
+}
+.container-main__item-2 {
+    width: 100%;
+}
+.container-main__item-3, 
+.container-main__item-4 {
+    width: 33%;
+}
+.container-main__item-5 {
+    width: 34%;
+}

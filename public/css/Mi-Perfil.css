@@ -1,0 +1,130 @@
+html,body
+{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.Portada{
+width: 100%;
+position: relative;
+height: 100%;
+}
+
+#Foto-Portada{
+    width:100%;
+    height: 300px;
+}
+
+#main{
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 0%;
+}
+
+#Foto-Perfil{
+    width:55%;
+    border-radius: 90px;
+    margin-top: 10px;
+}
+
+#div-Foto-Portada{
+    width: 100%;
+    height: 1%;
+}
+
+
+#Perfil-Head{
+    position: absolute; 
+    left: 5%;
+    top: 5%;
+
+    z-index: 2;
+}
+#contenido{
+    height: 100%;
+
+}
+
+#Mid-Section{
+    height: 100%;
+}
+
+.vacio{
+    width: 100%;
+    height: auto;
+
+}
+
+.vacio h1
+{
+    margin:auto;
+    border-radius: 10px;
+}
+
+.uno{
+    width: 35%;
+    height: 450px;
+    vertical-align:middle;
+    padding-top: 100px;
+    padding-right: 25px;
+}
+.botones-perfil{
+    background-color: #062F81;
+
+    width: 100px;
+
+
+}
+.Boton-Actual{
+    background-color: #2b4986;
+}
+
+.dos{
+    width: 50vw;
+}
+.tres{
+    width: 0%;
+}
+
+.fotoLogro{
+    height: 150px;
+}
+
+#container .col-6{
+    margin: auto;
+}
+
+#tituloLeader{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(85, 85, 85);
+    border-left: 15px solid rgb(53, 53, 53);
+    border-right: 15px solid rgb(53, 53, 53);;
+    margin-bottom:2%;
+    text-transform:uppercase;
+    width: 80%;
+
+}
+
+.container h2
+{
+    font-size: 50px;
+}
+
+#container .row
+{
+    text-align: center;
+}
+
+#textoLogros
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}

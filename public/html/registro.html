@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/registro.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" href="../index.html"><img src="../images/cemex blanco.png" alt="logo cemex" ></a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">INICIA SESION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./acerca_IS.html">ACERCA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contactanos_IS.html">CONTACTANOS</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./ayuda.html">AYUDA</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="foto-registro">
+        <img src="../images/banner-ladrillo.jpg"> 
+    </div>
+    <div id="main">
+        <form class="needs-validation" oninput='password2.setCustomValidity(password.value != password2.value ? "Passwords do not match." : "")'  action="../index.html"novalidate>
+            <h1>DATOS PERSONALES</h1>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu correo electrónico.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">Nombre(s)</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre(s)" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu(s) nombre(s).
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Apellidos</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Apellidos" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tus Apellidos
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="password">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" aria-describedby="inputGroupPrepend" name="password" required>
+                    <div class="invalid-feedback">
+                        La contraseña no coincide.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="password2">Confirmar contraseña</label>
+                    <input type="password" class="form-control" id="password2" placeholder="Confirmar contraseña" aria-describedby="inputGroupPrepend" name="password2" required>
+                    <div class="invalid-feedback">
+                        La contraseña no coincide.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">                
+                <div class="col-md-6 mb-3">
+                    <label for="estado">Estado</label>
+                    <input type="text" class="form-control" id="estado" placeholder="Estado" required>
+                    <div class="invalid-feedback" id="errorSelect">
+                        Por favor ingresa tu estado de residencia.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu ciudad de residencia.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="birthdate">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="birthdate" placeholder="Fecha de nacimiento" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu fecha de nacimiento.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="Teléfono" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu número telefónico.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="rfc">RFC</label>
+                    <input type="text" class="form-control" id="rfc" placeholder="RFC" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu RFC.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="puestoCargo">Puesto/Cargo</label>
+                    <input type="text" class="form-control" id="puestoCargo" placeholder="Puesto/Cargo" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu puesto o cargo.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                  <label class="form-check-label" for="notificaciones">
+                    Quiero recibir notificaciones en mi e-mail.
+                  </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="privacidad">
+                    Acepto las <a id="politicas" href="politicasPrivacidad.html">políticas de privacidad.</a>
+                  </label>
+                </div>
+            </div>
+            <button class="btn btn-outline-dark" type="submit">Crear cuenta</button>
+        </form>
+    </div>
+<!--footer starts from here-->
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>MAS INFORMACION</h3>
+                    <ul>
+                        <p style="font-size: 12px;">Lorem Ipsum is simply dummy text</p>
+                    </ul>
+                </div>
+                <div class="col" style="text-align:center;">
+                    <h3>INFORMACION DEL CONTACTO</h3>
+                    <a href="./html/contactanos_IS.html" class="btn btn-outline-light">Contactanos</a>
+                </div>
+                <div class="col">
+                    <h3 id="textoRS" style="text-align:right">REDES SOCIALES</h3>
+                    <div class="socialIcons">
+                        <a href="#" class="facebookIcon"><i class="fab fa-facebook-f" style="margin:10px"></i></a>
+                        <a href="#" class="twitterIcon"><i class="fab fa-twitter" style="margin:10px"></i></a>
+                        <a href="#" class="instagramIcon"><i class="fab fa-instagram" style="margin:10px"></i></a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="col copyright">©2021 TODOS LOS DERECHOS RESERVADOS</div>
+                <div id="opciones-footer" class="col opcionesFooter">
+                    <a class="footer-brand" href="./index-sesion-iniciada.html"><img src="../images/cemex blanco.png" alt="logo cemex"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    // jsfor disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                    
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

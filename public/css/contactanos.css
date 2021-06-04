@@ -1,0 +1,142 @@
+  .footer-dark {
+    color:#fff;
+    background-color:#282d32;
+    position:sticky;
+    top:100%;
+    z-index: 4;
+  }
+  
+  .footer-dark h3 {
+    margin-top:20px;
+    margin-bottom:8px;
+    font-weight:normal;
+    font-size:16px;
+  }
+
+  .left-text
+  {
+    background-color:white;
+  }
+
+  .footer-dark button
+  {
+    border-radius: 2px;
+    box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.3), 0 6px 10px 0 rgba(0,0,0,0.30);
+    border:none;
+  
+  }
+
+  .footer-dark ul {/*texto de adentro de Mas informacion*/
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:10px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+
+.footer-brand>img
+{
+  height:25px;
+  margin-left:50px;
+  margin-bottom: 10px;
+}
+#textoRS
+{
+  margin-right: 16px;
+}  
+.socialIcons
+{
+  text-align: right;
+  font-size: 30px;
+  padding:0px;
+}
+
+  .footer-dark .copyright {
+    font-size:12px;
+    text-align:left;
+    margin-bottom: 2px;
+    color:white;
+    opacity: 0.3;
+  }
+
+  .footer-dark .opcionesFooter {
+    font-size:12px;
+    text-align:right;
+    margin-bottom: 2px;
+    color:white;
+    opacity: 0.3;
+  }
+
+/*aqui empieza el diseno de la pagina como tal*/
+#main
+{
+  margin:0;
+  padding:0;
+  display:grid;
+  justify-content: center;
+}
+
+.container-box{
+  margin: auto;
+}
+
+.container-box .box-content
+{
+  margin-top: 50px;
+  width: 600px;
+  height: 322px;
+  background :#062F81;
+  box-shadow:0 5px 15px rgba(0,0,0,0.50);
+  margin-bottom: 0px;
+}
+.info p
+{
+  color:white;
+  padding-top:10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.container-box .info
+{
+  
+  align-content: center;
+}
+
+#imagenContacto
+{
+  width:250px;
+}
+
+.container-box .icon-contact{
+  float:left;
+  margin-right: 20px;
+}
+
+.hyperlinkText
+{
+  margin-top:20px;
+}
+
+.hyperlinkText #txtlink
+{
+  font-size:12px;
+  text-align: center;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  padding-top: 20vh;
+  margin-left: 50px;
+}
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

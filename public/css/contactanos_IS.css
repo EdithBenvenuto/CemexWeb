@@ -1,0 +1,93 @@
+/*aqui empieza el diseno de la pagina como tal*/
+#main
+{
+  margin:0;
+  padding:0;
+  display:grid;
+  justify-content: center;
+}
+
+.container-box .box-content
+{
+  margin-top: 50px;
+  width: 600px;
+  height: 322px;
+  background :#062F81;
+  box-shadow:0 5px 15px rgba(0,0,0,0.50);
+  margin-bottom: 0px;
+}
+.info p
+{
+  color:white;
+  padding-top:10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.container-box .info
+{
+  
+  align-content: center;
+}
+
+#imagenContacto
+{
+  width:250px;
+}
+
+.container-box .icon-contact{
+  float:left;
+  margin-right: 20px;
+}
+
+.hyperlinkText
+{
+  margin-top:20px;
+}
+
+.hyperlinkText #txtlink
+{
+  font-size:12px;
+  text-align: center;
+}
+
+.forms
+{
+  padding-left:20vh;
+}
+
+.forms-2
+{
+  padding-left:20vh;
+}
+
+.forms-3
+{
+  padding-left:20vh;
+}
+
+#botonMandar
+{
+  margin:0;
+}
+
+#formsBox
+{
+  margin-top:5vh;
+  padding-bottom:10vh;
+  border: 1px solid grey;
+  box-shadow:0 5px 15px rgba(0,0,0,0.50);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  margin-left: 50px;
+  margin-bottom: 5%;
+}
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

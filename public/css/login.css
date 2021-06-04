@@ -1,0 +1,83 @@
+:root{
+    --primary: #062F81;
+    --light:white;
+    --lightBlue: #47ACEF;
+    --gray: gray;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/*Foto de arriba*/
+/* #foto-login{
+    display: inline-block;
+    width: 100%;
+    height: 30vh;
+    margin-top: 2%;
+    background: linear-gradient(to bottom, rgba(6, 47, 129, 0.2),rgba(255, 255, 255, 0) 100%); 
+    background-size: cover;
+}
+
+/*Se envia la foto hacia atras
+#foto-login img{
+    height : 100%;
+    width: 100%;
+    position: relative;
+    z-index:-1;
+    display: block;
+} */
+
+#main{
+    padding-top:12%;
+    background-image: url('../images/fondoLogin.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.form-group label {
+    padding-top: 3%;
+}
+/*Las dos secciones*/
+#login{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    margin-top: -2%;
+    padding: 5%;
+    backdrop-filter: blur(4px); 
+    border-radius: 2%;
+    background-color:rgba(255, 255, 255, 0.8); 
+    
+}
+
+/*Botones*/
+#submit{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Olvidar contraseña*/
+#forgetPass{
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+}
+
+#forgetPass:hover{
+    text-decoration: underline;
+}
+
+label{
+    color:rgb(0, 0, 0);
+    font-size: 110%;
+}
+
+

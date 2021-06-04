@@ -1,0 +1,15 @@
+
+.container-main__item-2, 
+.container-main__item-3, 
+.container-main__item-4,
+.container-main__item-5 {
+    width: 50%;
+}
+
+
+.container-main__item-4 {
+    order: 2;
+}
+.container-main__item-5 {
+    order: 1;
+}

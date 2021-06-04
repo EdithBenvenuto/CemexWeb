@@ -1,0 +1,40 @@
+:root{
+    --primary: #062F81;
+    --light:white;
+    --lightBlue: #47ACEF;
+    --gray: gray;
+    --red: #D31A3D;
+}
+
+#recuperarContra{
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    margin-top: 4%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#recuperarContra h3{
+    background-color: var(--red);
+    padding: 2%;
+    border: 1px solid black;
+    color: var(--light);
+    border-radius: 20px 20px 0 0;
+}
+
+.formContra{
+    padding: 5%;
+}
+
+.formContra button{
+    margin-top: 5%;
+}
+
+.formContra input{
+    margin-top: 4%;
+}
+
+.formContra label{
+    margin-top: 3%;
+}
