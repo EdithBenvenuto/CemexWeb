@@ -121,3 +121,7 @@ th:only-child{
   height: 15%;
   text-transform:uppercase;
 }
+
+#contTablas{
+  padding: 0 20px;
+}
