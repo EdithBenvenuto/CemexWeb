@@ -71,6 +71,62 @@ app.get("/userleaderboard/:NameUser", (req, res) => {
   });
 });
 
+app.get("/tareasP", (req, res) => {
+  const conn = sql.connect(config, (err) => {
+    if (err) console.log(err);
+    const request = new sql.Request();
+    //console.log(req.params.NameUser);
+    let query =
+      "SELECT  task_key, COUNT (task_key)  as 'pendientes' FROM subtask  where subtask_status='To do' group by task_key;";
+    console.log(query);
+    request.query(query, (err, { recordset }) => {
+      if (err) console.log(err);
+      console.log(recordset);
+      res.json(
+        recordset
+      );
+    });
+  });
+});
+
+app.get("/tareasC", (req, res) => {
+  const conn = sql.connect(config, (err) => {
+    if (err) console.log(err);
+    const request = new sql.Request();
+    //console.log(req.params.NameUser);
+    let query =
+      "SELECT  task_key, COUNT (task_key)  as 'completadas' FROM subtask  where subtask_status='Done' group by task_key;";
+    console.log(query);
+    request.query(query, (err, { recordset }) => {
+      if (err) console.log(err);
+      console.log(recordset);
+      res.json(
+        recordset
+      );
+    });
+  });
+});
+
+app.get("/tareasNombres", (req, res) => {
+  const conn = sql.connect(config, (err) => {
+    if (err) console.log(err);
+    const request = new sql.Request();
+    //console.log(req.params.NameUser);
+    let query =
+      "SELECT  task_key, subtask_assignee, COUNT (subtask_assignee) as 'completadas' from subtask where subtask_status='Done' group by subtask_assignee, task_key;";
+    console.log(query);
+    request.query(query, (err, { recordset }) => {
+      if (err) console.log(err);
+      console.log(recordset);
+      res.json(
+        recordset
+      );
+    });
+  });
+});
+
+
+
 app.get("/misTareas/:NameUser", (req, res) => {
   const conn = sql.connect(config, (err) => {
     if (err) console.log(err);
@@ -88,7 +144,7 @@ app.get("/misTareas/:NameUser", (req, res) => {
     });
   });
 });
-//put en mis tareas para el checkbox
+
 
 app.get("/MiPerfil/:NameUser", (req, res) => {
   const conn = sql.connect(config, (err) => {
@@ -100,13 +156,13 @@ app.get("/MiPerfil/:NameUser", (req, res) => {
     console.log(query);
     request.query(query, (err, { recordset }) => {
       if (err) console.log(err);
-      console.log(recordset);
-      res.json({
-        respuesta: recordset
-      });
+      console.log(recordset[0]);
+      res.json(recordset[0]
+      );
     });
   });
 });
+
 
 app.get("/misLogros/:NameUser", (req, res) => {
   const conn = sql.connect(config, (err) => {
